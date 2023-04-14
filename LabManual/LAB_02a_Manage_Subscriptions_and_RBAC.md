@@ -40,9 +40,9 @@ lab:
    >
    > 注：このラボでは2つのアカウントを使用します。それぞれのIDとパスワードを控えてください。
    >
-   > 　　◇LabUser-XXXXXXXX@LODSPRODMSLEARNMCA.onmicrosoft.com
+   > 　　◇`LabUser-XXXXXXXX@LODSPRODMSLEARNMCA.onmicrosoft.com`
    >
-   > 　　◇az104-02-aaduser-XXXXXXXX@LODSPRODMSLEARNMCA.onmicrosoft.com
+   > 　　◇`az104-02-aaduser-XXXXXXXX@LODSPRODMSLEARNMCA.onmicrosoft.com`
 
 
 
