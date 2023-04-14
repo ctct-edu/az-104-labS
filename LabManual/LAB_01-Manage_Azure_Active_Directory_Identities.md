@@ -27,7 +27,7 @@ lab:
 
 
 
-## アーキテクチャの図
+## アーキテクチャ
 ![image](./media/lab01.png)
 
 
@@ -48,11 +48,11 @@ lab:
 
 > **シナリオ：このタスクでは、新たに「First AAD」テナントを作成します。**
 
-1. Azure portal の画面上部にある検索ボックス「**Azure Active Directory**」 と入力します。
+1. Azure portal の画面上部にある検索ボックスに「**Azure Active Directory**」 と入力します。
 
    > 注：サインイン後、「**ツアーへようこそ**」と表示された場合は「**後で行う**」をクリックします。
 
-1. 一覧に「Azure Active Directory」と表示されます。検索結果をクリックします。
+1. 一覧に「**Azure Active Directory**」と表示されます。検索結果をクリックします。
 
 1. 「**cloudslice | 概要**」 ブレードの画面中央にある[**テナントの管理**]をクリックします。
 
