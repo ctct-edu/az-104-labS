@@ -8,36 +8,29 @@ lab:
 
 ## ラボ シナリオ
 
-このラボでは、Azure Active Directoryを使用してアカウント管理を実施します。
+このラボのタスクは以下の通りです。
 
-
-
-## 目標
-
-このラボでは次の内容を学習します。
+> 注：（オプション）は時間がある場合に実施してください。
 
 + タスク １：Azure Portalへサインイン
-
 + タスク ２：新たなテナントを作成
-
 + タスク ３：Premium ライセンスを有効化
-
 + タスク ４：ユーザー作成とロール付与
-
 + タスク ５：ユーザー作成とライセンス付与
-
 + タスク ６：セキュリティグループ（動的ユーザー）の作成
-
 + タスク ７：Microsoft365グループ（割り当て済み）の作成（オプション）
-
 + タスク ８：セキュリティグループ（割り当て済み）の作成 （オプション）
 
-  **※（オプション）は時間がある場合に実施してください。**
+
 
 ## 予想時間: 40 分
 
+
+
 ## アーキテクチャの図
 ![image](./media/lab01.png)
+
+
 
 ## 手順
 
@@ -204,7 +197,7 @@ lab:
      >
      > 　  　-Mozilla Fire Foxでは「プライベート」ウィンドウ
 
-1. 用意したWebブラウザおよび作成したアカウント(`az104-01a-aaduser1@firstaadXXXXXXXX.onmicrosoft.com`)で [Azure portal](https://portal.azure.com) にログインします。
+1. 用意したWebブラウザで作成したアカウント(`az104-01a-aaduser1@firstaadXXXXXXXX.onmicrosoft.com`)で [Azure portal](https://portal.azure.com) にログインします。
 
 1. 一覧に「**Azure Active Directory**」と表示されます。検索結果をクリックします。
 
