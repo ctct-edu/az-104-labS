@@ -20,4 +20,4 @@
 
 ## 演習の始め方
 
-まず初めに「[Preparation](https://github.com/ctct-edu/az-104-labS/blob/main/LabManual/Preparation.md)」を参照し、演習用アカウントの準備を開始してください。
+まず初めに「[Preparation](https://github.com/ctct-edu/az-104-labS/blob/main/LabManual/Preparation.md)」を参照し、演習環境の準備を開始してください。
