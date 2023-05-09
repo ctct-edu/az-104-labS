@@ -45,10 +45,10 @@ lab:
 
 このタスクでは、Cloud Shell 内で Azure PowerShell セッションを使用して、リソース グループと Azure マネージド ディスクを作成します。
 
-1. 前のラボで作成した **az104-03b-rg1** リソース グループと同じ Azure リージョンにリソース グループを作成ために、Cloud Shell 内の PowerShell セッションから次を実行します。
+1. Cloud Shell 内の PowerShell セッションから次を実行します。
 
    ```powershell
-   $location = (Get-AzResourceGroup -Name az104-03b-rg1).Location
+   $location = 'eastus'
    
    $rgName = 'az104-03c-rg1'
    

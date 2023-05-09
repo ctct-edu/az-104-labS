@@ -45,10 +45,10 @@ lab:
 
 このタスクでは、Cloud Shell 内で Azure CLI セッションを使用して、リソース グループと Azure マネージド ディスクを作成します。
 
-1. 前のラボで作成した **az104-03c-rg1** リソース グループと同じ Azure リージョンにリソース グループを作成するには、Cloud Shell 内の Bash セッションから次のコマンドを実行します。
+1. Cloud Shell 内の Bash セッションから次のコマンドを実行します。
 
    ```sh
-   LOCATION=$(az group show --name 'az104-03c-rg1' --query location --out tsv)
+   LOCATION='eastus'
    
    RGNAME='az104-03d-rg1'
    
