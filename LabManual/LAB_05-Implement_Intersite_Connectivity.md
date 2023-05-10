@@ -33,6 +33,8 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
 1. [Azure portal](https://portal.azure.com/) にサインインします。
 
+1. **「リソースグループ」** を検索して選択し、**「az104-05-rg1」**から始まるリソースグループの名称をメモします。後続のタスクでこのリソースグループ名を使用します。
+
 1. Azure portal の右上にあるアイコンをクリックして **Azure Cloud Shell** を開きます。
 
 1. **Bash** や **PowerShell** のどちらかを選択するためのプロンプトが表示されたら、**PowerShell** を選択します。
@@ -53,12 +55,14 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
     本演習では、1つ目のリージョンを **「米国東部：eastus」** 、2つ目のリージョンを **「 米国西部：westus 」** にデプロイします。
 
+    **「$rgName」**で指定するリソースグループ名は、以前にメモしたリソースグループ名に書き換えます。
+
     ```powershell
     $location1 = 'eastus'
     
     $location2 = 'westus'
     
-    $rgName = 'az104-05-rg1'
+    $rgName = '[resourceGroupName]'
     
     New-AzResourceGroup -Name $rgName -Location $location1
     ```
@@ -113,10 +117,10 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
    >**注**: この手順では、az104-05-vnet0 から az104-05-vnet1、az104-05-vnet1 から az104-05-vnet0 までの 2 つのローカル ピアリングを確立します。
 
-   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。
+   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。コマンドで実行する場合、**$rgName**で指定するリソースグループ名を以前のタスクでメモしたリソースグループ名に書き換える必要があります。
 
    ```powershell
-   $rgName = 'az104-05-rg1'
+   $rgName = '[resourceGroupName]'
    
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
    
@@ -148,10 +152,10 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
    >**注**: このステップでは、az104-05-vnet0 から az104-05-vnet2、az104-05-vnet2 から az104-05-vnet0 までの 2 つのグローバル ピアリングを確立します。
 
-   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。
+   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。コマンドで実行する場合、**$rgName**で指定するリソースグループ名を以前のタスクでメモしたリソースグループ名に書き換える必要があります。
 
    ```powershell
-   $rgName = 'az104-05-rg1'
+   $rgName = '[resourceGroupName]'
    
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
    
@@ -185,10 +189,10 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
    > **注**: このステップでは、az104-05-vnet1 から az104-05-vnet2、az104-05-vnet2 から az104-05-vnet1 までの 2 つのグローバル ピアリングを確立します。
 
-   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。
+   >**注**: 前のタスクで作成したバーチャル ネットワークが表示されない Azure Portal インターフェイスで問題が発生した場合は、Cloud Shell から次のPowerShell コマンドを実行して、ピアリングを構成できます。コマンドで実行する場合、**$rgName**で指定するリソースグループ名を以前のタスクでメモしたリソースグループ名に書き換える必要があります。
 
    ```powershell
-   $rgName = 'az104-05-rg1'
+   $rgName = '[resourceGroupName]'
    
    $vnet1 = Get-AzVirtualNetwork -Name 'az104-05-vnet1' -ResourceGroupName $rgname
    
@@ -252,26 +256,6 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
     >**注**: このテストで TCP 3389 を使用するのは、このポートがオペレーティング システムのファイアウォールによって既定で許可されているためです。
 
 1. コマンドの出力を確認し、接続が正常に行われたことを確認します。
-
-#### リソースをクリーン アップする
-
-   >**注**: 新しく作成した Azure リソースのうち、使用しないリソースは必ず削除してください。使用しないリソースを削除しないと、予期しないコストが発生する場合があります。
-
-1. Azure portal の **「Cloud Shell」** ウィンドウで **「PowerShell」** セッションを開きます。
-
-1. 次のコマンドを実行して、このモジュールのラボ全体で作成したすべてのリソース グループのリストを表示します。
-
-   ```powershell
-   Get-AzResourceGroup -Name 'az104-05*'
-   ```
-
-1. 次のコマンドを実行して、このモジュールのラボ全体で作成したすべてのリソース グループのリストを削除します。
-
-   ```powershell
-   Get-AzResourceGroup -Name 'az104-05*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-    >**注**: コマンドは非同期で実行されるので (-AsJob パラメーターによって決定されます)、別の PowerShell コマンドを同一 PowerShell セッション内ですぐに実行できますが、リソース グループが実際に削除されるまでに数分かかります。
 
 #### レビュー
 
