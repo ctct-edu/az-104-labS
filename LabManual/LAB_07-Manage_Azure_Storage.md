@@ -51,19 +51,7 @@ lab:
 
     　　 **\\Allfiles\\Labs\\07\\az104-07-vm-parameters.json**
 
-1. 「Cloud Shell」 ウィンドウから次のコマンドを実行して、仮想マシンをホストするリソース グループを作成します (デプロイするリージョンを変更する場合、`「eastus」` の部分を別Azure リージョンの名前に置き換えます)。**「$rgName」**で指定するリソースグループ名は、以前にメモしたリソースグループ名の内**「az104-07-rg0」**から始まるものに書き換えます。
-
-   >**注**: Azure リージョンの名前を一覧表示するには、`(Get-AzLocation).Location` を実行します
-
-   ```powershell
-   $location = 'eastus'
-   
-   $rgName = '[resourceGroupName]'
-   
-   New-AzResourceGroup -Name $rgName -Location $location
-   ```
-
-1. 「Cloud Shell」 ペインから次のコマンドを実行し、アップロードされたテンプレートとパラメーター ファイルを使用して、仮想マシンをデプロイします。パスワードの入力を求められるため、任意のパスワードを入力します。
+1. 「Cloud Shell」 ウィンドウから次のコマンドを実行し、アップロードされたテンプレートとパラメーター ファイルを使用して、仮想マシンをデプロイします。**「$rgName」**で指定するリソースグループ名は、以前にメモしたリソースグループ名の内**「az104-07-rg0」**から始まるものに書き換えます。パスワードの入力を求められるため、任意のパスワードを入力します。
 
    > **注:** VMのパスワードには要件が設けられています。以下の条件を満たすように設定する必要があります。<br>
    > ・8 文字以上 256 文字以下<br>
@@ -74,6 +62,8 @@ lab:
    > 	記号<br>
 
    ```powershell
+   $rgName = '[resourceGroupName]'
+   
    New-AzResourceGroupDeployment `
       -ResourceGroupName $rgName `
       -TemplateFile $HOME/az104-07-vm-template.json `
@@ -226,11 +216,11 @@ lab:
     >
     > 　  仮想マシンへRDP接続をしてGUIで操作して実施することも可能です。お好みでお選びください。
     >
-    > 　  仮想マシンのサインイン情報：ユーザー名**「Student」**、パスワード**「Pa55w.rd1234」**
+    > 　  仮想マシンのサインイン情報：ユーザー名**「Student」**、パスワード：タスク1で任意に設定したもの
 
-1. **「az104-07-vm0」** ブレードの **「操作」** セクションで、**「コマンドの実行」** をクリックします。
+1. **「az104-07-vm0」** ブレードの **「操作」** セクションで、**「実行コマンド」** をクリックします。
 
-1. **「az104-07-vm0- コマンドの実行」** ブレードで、**「RunPowerShellScript」** をクリックします。
+1. **「az104-07-vm0- 実行コマンド」** ブレードで、**「RunPowerShellScript」** をクリックします。
 
 1. **「コマンドスクリプトの実行」** ブレードで、このタスクの前半でコピーしたスクリプトを **「PowerShell スクリプト」** ウィンドウに貼り付け、**「実行」** をクリックします。
 
@@ -240,7 +230,7 @@ lab:
 
    ```powershell
    New-Item -Type Directory -Path 'Z:\az104-07-folder'
-
+   
    New-Item -Type File -Path 'Z:\az104-07-folder\az-104-07-file.txt'
    ```
 
