@@ -234,26 +234,6 @@ Contoso には、Azure Container Instances を使用して実行するのに適�
 
 1. **「Cloud Shell」** ウィンドウを閉じます。
 
-#### リソースをクリーン アップする
-
-   >**注**: 新しく作成した Azure リソースのうち、使用しないリソースは必ず削除してください。使用しないリソースを削除しないと、予期しないコストが発生する場合があります。
-
-1. Azure portal で、**Cloud Shell** ウィンドウ内で **Bash** シェル セッションを開きます。
-
-1. 次のコマンドを実行して、このモジュールのラボ全体で作成したすべてのリソース グループのリストを表示します。
-
-   ```sh
-   az group list --query "[?starts_with(name,'az104-09c')].name" --output tsv
-   ```
-
-1. 次のコマンドを実行して、このモジュールのラボ全体で作成したすべてのリソース グループのリストを削除します。
-
-   ```sh
-   az group list --query "[?starts_with(name,'az104-09c')].[name]" --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
-   ```
-
-    >**注**: コマンドは非同期に実行されるので (--nowait パラメーターで決定される)、同じ Bash セッション内ですぐに別の Azure CLI コマンドを実行できますが、リソース グループが実際に削除されるまでに数分かかります。
-
 #### レビュー
 
 このラボでは次の内容を学習しました。
