@@ -39,10 +39,8 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
 1. **Bash** や **PowerShell** のどちらかを選択するためのプロンプトが表示されたら、**PowerShell** を選択します。
 
-    > **注**: **Cloud Shell** の初回起動時に **「ストレージがマウントされていません」** というメッセージが表示された場合は、このラボで使用している
-    >
-    > ​      サブスクリプションを選択し、**「ストレージの作成」** を選択します。
-
+    > **注**: **Cloud Shell** の初回起動時に **「ストレージがマウントされていません」** というメッセージが表示された場合は、このラボで使用しているサブスクリプションを選択し、**「詳細設定を表示」**をクリックします。**「リソースグループ」**については既存のものを使用し、**「ストレージアカウント」**、**「共有ファイル」**については新規作成を選択して任意の文字列を入力します。入力完了後、**「ストレージの作成」** を選択します。
+    
 1. Cloud Shell ウィンドウのツールバーで、**「ファイルのアップロード/ダウンロード」** アイコンをクリックし、ドロップダウン メニューで 
 
     **「アップロード」** をクリックして、以下のファイルをファイルをCloud Shell ホーム ディレクトリにアップロードします。
@@ -51,25 +49,7 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
     　　 **\Allfiles\Labs\05\az104-05-vnetvm-loop-parameters.json**
 
-1. Cloud Shell ペインから、以下を実行して、ラボ環境をホストするリソース グループを作成します。 
-
-    本演習では、1つ目のリージョンを **「米国東部：eastus」** 、2つ目のリージョンを **「 米国西部：westus 」** にデプロイします。
-
-    **「$rgName」**で指定するリソースグループ名は、以前にメモしたリソースグループ名に書き換えます。
-
-    ```powershell
-    $location1 = 'eastus'
-    
-    $location2 = 'westus'
-    
-    $rgName = '[resourceGroupName]'
-    
-    New-AzResourceGroup -Name $rgName -Location $location1
-    ```
-
-    >**注**: 使用可能なAzure リージョン名を確認するには、Cloud Shell の PowerShell セッションから **(Get-AzLocation).Location** を実行します。
-
-1. 「Cloud Shell」 ウィンドウで、次のコマンドを実行してアップロードしたテンプレートとパラメーター ファイルを使用して 仮想ネットワークおよび仮想マシンをデプロイします。パスワードの入力を求められるため、任意のパスワードを入力します。
+1. 「Cloud Shell」 ウィンドウで、次のコマンドを実行してアップロードしたテンプレートとパラメーター ファイルを使用して 仮想ネットワークおよび仮想マシンをデプロイします。**ResourceGroupName** で指定するリソースグループ名は、以前にメモしたリソースグループ名に書き換えます。パスワードの入力を求められるため、任意のパスワードを入力します。
 
    > **注:** VMのパスワードには要件が設けられています。以下の条件を満たすように設定する必要があります。
    > ・8 文字以上 256 文字以下
@@ -81,7 +61,7 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
    ```powershell
    New-AzResourceGroupDeployment `
-      -ResourceGroupName $rgName `
+      -ResourceGroupName '[resourceGroupName]' `
       -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
       -TemplateParameterFile $HOME/az104-05-vnetvm-loop-parameters.json `
       -location1 $location1 `
