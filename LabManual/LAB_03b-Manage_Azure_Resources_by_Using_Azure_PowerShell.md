@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '03c - Azure PowerShell を使用して Azure リソースを管理する'
+    title: '03b - Azure PowerShell を使用して Azure リソースを管理する'
     module: 'モジュール 03 - Azure 管理'
 ---
 
-# ラボ 03c - Azure PowerShell を使用して Azure リソースを管理する
+# ラボ 03b - Azure PowerShell を使用して Azure リソースを管理する
 ## ラボ シナリオ
 
 このラボのタスクは以下の通りです。
