@@ -4,7 +4,7 @@ lab:
     module: 'モジュール 03 - Azure 管理'
 ---
 
-# ラボ 03a - ARM テンプレートを使用して Azure リソースを管理する
+# ラボ 03b - ARM テンプレートを使用して Azure リソースを管理する
 ## ラボ シナリオ
 このラボのタスクは以下の通りです。
 
@@ -85,6 +85,7 @@ lab:
     | Sku | **Standard_LRS** |
     | Disk Size Gb | **32** |
     | Create Option | **empty** |
+    | Network Access Policy | **AllowAll** |
     
     > 注：リソースグループやディスク名を"03b"に変更したことを確認してください。
     >
