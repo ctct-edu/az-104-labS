@@ -147,7 +147,7 @@ lab:
      | サブスクリプション     | **既定のサブスクリプション**                                 |
      | リソースグループ       | **Lab02b-Resources-XXXXXXXX**<br />※タスク２で作成したリソースグループ |
      | ストレージアカウント名 | **storageXXXXXXXX**<br />※※XにはLabUser-XXXXXXXXと同じ8桁の数字を入力します。(あるいはランダムで一意な数字) |
-     | 地域                   | **（Asia Pacific）東日本**                                   |
+     | 地域                   | **（Asia Pacific）Japan East**                               |
      | パフォーマンス         | **Standard**                                                 |
      | 冗長性                 | **geo冗長ストレージ（GSR）**                                 |
 
