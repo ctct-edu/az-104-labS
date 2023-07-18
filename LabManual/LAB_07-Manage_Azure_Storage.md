@@ -104,7 +104,7 @@ lab:
 
 1. 「ストレージ アカウント」ブレードの **「データ管理」** セクションで、**「冗長性」** をクリックし、リージョンペアの対向がセカンダリの場所となっていることを確認します。 
 
-1. 「ストレージ アカウント|冗長性」ブレードの **「冗長性」** ドロップダウン リストから **「ローカル冗長ストレージ (LRS)」** を選択して、変更を保存します。
+1. 「ストレージ アカウント|冗長性」ブレードの **「冗長性」** ドロップダウン リストから **「ローカル冗長ストレージ (LRS)」** を選択して、**「保存」** をクリックし、変更を保存します。
     ストレージ アカウントの場所がプライマリのみになっていることを確認してください。
 
 1. ストレージ アカウントの **「構成」** ブレードに移動し、**「BLOBのアクセスレベル (既定)」** を **「クール」** に設定して、変更を保存します。
@@ -204,6 +204,18 @@ lab:
     | 設定 | 値 |
     | --- | --- |
     | 名前 | **az104-07-share** |
+
+    >**注**: ファイル共有の作成がポリシーにより許可されなかった場合は、Cloud Shell から次のPowerShell コマンドを実行して、 ファイル共有を構成できます。コマンドで実行する場合、'[resourceGroupName]'をリソースグループ名に、 '[storageaccountName]'をストレージアカウント名に書き換える必要があります。
+
+    ```powershell
+    $storageAccount = Get-AzureRmStorageAccount -ResourceGroupName '[resourceGroupName]' -Name '[storageaccountName]'
+    
+    $storageKey = (Get-AzureRmStorageAccountKey -ResourceGroupName $storageAccount.ResourceGroupName -Name $storageAccount.StorageAccountName | select -first 1).Value
+    
+    $storageContext = New-AzureStorageContext -StorageAccountName $storageAccount.StorageAccountName -StorageAccountKey $storageKey
+    
+    New-AzureStorageShare -Name az104-07-share -Context $storageContext
+    ```
 
 1. 新しく作成したファイル共有をクリックし、**「接続」** をクリックします。
 
