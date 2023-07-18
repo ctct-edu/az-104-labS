@@ -211,7 +211,7 @@ Azure上に仮想マシンをデプロイおよび構成する際、使用でき
 
 このタスクでは、Azure portal を使用して、可用性ゾーン間で Azure 仮想マシン スケール セットをデプロイします。
 
-1. Azure portal で、**Virtual Machine Scale Sets**を検索して選択し、「**Virtual Machine Scale Sets**」 ブレードで、「**+ 追加**」 (または **+ 作成 **) を選択します。
+1. Azure portal で、**Virtual Machine Scale Sets**を検索して選択し、「**Virtual Machine Scale Sets**」 ブレードで、「**+ 追加**」を選択します。
 
 1. **「仮想マシン スケール セットの作成」** ブレードの **「基本」** タブで、次の設定を指定します(他の設定は既定値のままにします)。設定完了後、**「次：スポット >」**をクリックしてAzureスポットで設定可能な内容を確認します（変更なし）。
 
