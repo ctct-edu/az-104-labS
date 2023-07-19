@@ -59,14 +59,14 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
    > 	数値(0 から 9)<br>
    > 	記号<br>
 
-       ```powershell
-        New-AzResourceGroupDeployment `
-           -ResourceGroupName '[resourceGroupName]' `
-           -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
-           -TemplateParameterFile $HOME/az104-05-vnetvm-loop-parameters.json `
-           -location1 "EastUS" `
-           -location2 "WestUS"
-       ```
+   ```powershell
+    New-AzResourceGroupDeployment `
+       -ResourceGroupName '[resourceGroupName]' `
+       -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
+       -TemplateParameterFile $HOME/az104-05-vnetvm-loop-parameters.json `
+       -location1 "EastUS" `
+       -location2 "WestUS"
+   ```
 
     > **注**: デプロイが完了するまで待ってから次の手順に進んでください。これにはおよそ 2 分かかります。
 
