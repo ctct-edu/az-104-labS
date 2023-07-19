@@ -59,7 +59,7 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
    > 	数値(0 から 9)<br>
    > 	記号<br>
 
-       ```
+       ```powershell
         New-AzResourceGroupDeployment `
            -ResourceGroupName '[resourceGroupName]' `
            -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
