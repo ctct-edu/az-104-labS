@@ -38,7 +38,7 @@ lab:
 
 1. [**Azure portal**](http://portal.azure.com) にサインインします。
 
-1. Azure portal で **「App Service」** を検索して選択し、**「App Service」** ブレードで **「+ 作成」** をクリックします。
+1. Azure portal で **「App Service」** を検索して選択し、**「App Service」** ブレードで **「+ 作成」** をクリックし、  **「+ Web アプリ」** をクリックし ます。
 
 1. **「Web アプリ」** ブレードの **「基本」** タブで、次の設定を指定します (他の設定は既定値のままにします)。
 
