@@ -208,7 +208,7 @@ lab:
 
 1. **Bash** や **PowerShell** のどちらかを選択するためのプロンプトが表示されたら、**PowerShell** を選択します。
 
-1. Cloud Shell ウィンドウから次のコマンドを実行して、App Web アプリの URL を確認します。**「$rgName」**で指定するリソースグループ名は、AppService作成時に使用した**「az104-09a-rg1」**から始まるものに書き換えます。
+1. Cloud Shell ウィンドウから次のコマンドを実行して、App Web アプリの URL を確認します。 **「$rgName」** で指定するリソースグループ名は、AppService作成時に使用した **「az104-09a-rg1」** から始まるものに書き換えます。
 
    ```powershell
    $rgName = '[resourceGroupName]'
@@ -222,7 +222,7 @@ lab:
    while ($true) { Invoke-WebRequest -Uri $webapp.DefaultHostName }
    ```
 
-1. Cloud Shell ウィンドウを最小化し (閉じないように注意してください)、App Serviceのブレードで **「設定」** セクションで、**「スケールアウト (App Service のプラン)」** に戻ります。**「実行履歴」**のタブに移動し、インスタンス数が2に増加するまで確認します（適宜最新の状態に更新する必要があります）。
+1. Cloud Shell ウィンドウを最小化し (閉じないように注意してください)、App Serviceのブレードで **「設定」** セクションで、**「スケールアウト (App Service のプラン)」** に戻ります。 **「実行履歴」** のタブに移動し、インスタンス数が2に増加するまで確認します（適宜最新の状態に更新する必要があります）。
 
 1. インスタンスID が 2 つに増えた場合は、Cloud Shell ウィンドウを再び開き、**Ctrl + C** キーを押してスクリプトを終了します。
 
