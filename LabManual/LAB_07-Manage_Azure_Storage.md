@@ -205,7 +205,7 @@ lab:
     | --- | --- |
     | 名前 | **az104-07-share** |
 
-    >**注**: もしファイル共有の作成が演習環境のポリシーにより許可されなかった場合は、Cloud Shell から次のPowerShell コマンドを実行して、ファイル共有を構成できます。コマンドで実行する場合、'[resourceGroupName]' をリソースグループ名に、'[storageaccountName]' をストレージアカウント名に書き換える必要があります。
+    >**注**: もしファイル共有の作成が演習環境のポリシーにより許可されなかった場合は、Cloud Shell から次のPowerShell コマンドを実行して、ファイル共有を構成できることがあります。コマンドで実行する場合、'[resourceGroupName]' をリソースグループ名に、'[storageaccountName]' をストレージアカウント名に書き換える必要があります。
 
     ```powershell
     $storageAccount = Get-AzureRmStorageAccount -ResourceGroupName '[resourceGroupName]' -Name '[storageaccountName]'
