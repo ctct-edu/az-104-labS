@@ -51,19 +51,21 @@ Contoso では、ボストン、ニューヨーク、シアトルの各オフィ
 
 1. 「Cloud Shell」 ウィンドウで、次のコマンドを実行してアップロードしたテンプレートとパラメーター ファイルを使用して 仮想ネットワークおよび仮想マシンをデプロイします。**ResourceGroupName** で指定するリソースグループ名は、以前にメモしたリソースグループ名に書き換えます。パスワードの入力を求められるため、任意のパスワードを入力します。（例：Pa55w.rd1234）
 
-       > **注:** VMのパスワードには要件が設けられています。以下の条件を満たすように設定する必要があります。<br>
-       > ・8 文字以上 256 文字以下<br>
-       > ・次の 4 種類の文字のうち 3 つが必要です。<br>
-       > 	英小文字<br>
-       > 	英大文字<br>
+   >  **注:** VMのパスワードには要件が設けられています。以下の条件を満たすように設定する必要があります。<br>
+   > ・8 文字以上 256 文字以下<br>
+   > ・次の 4 種類の文字のうち 3 つが必要です。<br>
+   > 	英小文字<br>
+   > 	英大文字<br>
+   > 	数値(0 から 9)<br>
+   > 	記号<br>
 
-       ```powershell
-    New-AzResourceGroupDeployment `
-       -ResourceGroupName '[resourceGroupName]' `
-       -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
-       -TemplateParameterFile $HOME/az104-05-vnetvm-loop-parameters.json `
-       -location1 "EastUS" `
-       -location2 "WestUS"
+       ```
+        New-AzResourceGroupDeployment `
+           -ResourceGroupName '[resourceGroupName]' `
+           -TemplateFile $HOME/az104-05-vnetvm-loop-template.json `
+           -TemplateParameterFile $HOME/az104-05-vnetvm-loop-parameters.json `
+           -location1 "EastUS" `
+           -location2 "WestUS"
        ```
 
     > **注**: デプロイが完了するまで待ってから次の手順に進んでください。これにはおよそ 2 分かかります。
