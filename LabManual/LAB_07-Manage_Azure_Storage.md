@@ -197,7 +197,7 @@ lab:
 
 1. Azure portal で、このラボの最初のタスクで作成したストレージ アカウントのブレードに戻り、**「データ ストレージ」** セクションの **「ファイル共有」** をクリックします。
 
-1. **「+ ファイル共有」** をクリックし、次の設定でファイル共有を作成します。
+1. **「+ ファイル共有」** をクリックし、ファイル共有を作成するため次の通り設定します。
 
     (その他の設定は既定値のままにします)
 
@@ -205,17 +205,9 @@ lab:
     | --- | --- |
     | 名前 | **az104-07-share** |
 
-    >**注**: もしファイル共有の作成が演習環境のポリシーにより許可されなかった場合は、Cloud Shell から次のPowerShell コマンドを実行して、ファイル共有を構成できることがあります。コマンドで実行する場合、'[resourceGroupName]' をリソースグループ名に、'[storageaccountName]' をストレージアカウント名に書き換える必要があります。
+1. **「次へ:バックアップ」** ボタンがある場合はクリックし、**「バックアップの有効化」**のチェックボックスをオフにします、ボタンがない場合は無視して次の手順に進みます。
 
-    ```powershell
-    $storageAccount = Get-AzureRmStorageAccount -ResourceGroupName '[resourceGroupName]' -Name '[storageaccountName]'
-    
-    $storageKey = (Get-AzureRmStorageAccountKey -ResourceGroupName $storageAccount.ResourceGroupName -Name $storageAccount.StorageAccountName | select -first 1).Value
-    
-    $storageContext = New-AzureStorageContext -StorageAccountName $storageAccount.StorageAccountName -StorageAccountKey $storageKey
-    
-    New-AzureStorageShare -Name az104-07-share -Context $storageContext
-    ```
+1. **「確認および作成」** および **「作成」** ボタンをクリックしファイル共有を作成します。
 
 1. 新しく作成したファイル共有をクリックし、**「接続」** をクリックします。
 
@@ -231,11 +223,11 @@ lab:
 
 1. 引き続きPowerShellコンソールを使用して、次のスクリプトを実行します。
 
-   ```powershell
-   New-Item -Type Directory -Path 'Z:\az104-07-folder'
-   
-   New-Item -Type File -Path 'Z:\az104-07-folder\az-104-07-file.txt'
-   ```
+    ```powershell
+    New-Item -Type Directory -Path 'Z:\az104-07-folder'
+    
+    New-Item -Type File -Path 'Z:\az104-07-folder\az-104-07-file.txt'
+    ```
 
 1. スクリプトが正常に完了したことを確認します。
 
