@@ -334,7 +334,7 @@ Azure 仮想ネットワークの機能について学習します。まず、Az
 
 このタスクでは、Azure パブリック DNS ゾーンを使用して外部 DNS 名前解決を構成します。
 
-1. **SEA-DEV** ラボ システムの Web ブラウザーで新しいタブを開き、[**GoDaddy**](https://www.godaddy.com/domains/domain-name-search) に移動します。
+1. Web ブラウザーで新しいタブを開き、[**GoDaddy**](https://www.godaddy.com/domains/domain-name-search) に移動します。
 
 2. ドメイン名検索を使用して、使用されていないドメイン名を識別します。
 
