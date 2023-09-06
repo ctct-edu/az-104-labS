@@ -93,7 +93,7 @@ lab:
 1. 変更が適用されていることを確認するには、次のコマンドを実行します。
 
    ```sh
-   az disk show --resource-group $RGNAME --name $DISKNAME --query diskSizeGb
+   az disk show --resource-group $RGNAME --name $DISKNAME --query diskSizeGB
    ```
 
 1. ディスク パフォーマンス SKU を **Premium_LRS** に変更するには、Cloud Shell 内の Bash セッションから次のコマンドを実行します。
