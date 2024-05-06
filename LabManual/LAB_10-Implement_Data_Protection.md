@@ -193,18 +193,18 @@ lab:
 
 1. Recovery Services コンテナーを検索して選択します。
 
-1. **[診断設定]**、**[診断設定の追加]** の順に選択します。
+1. **[診断設定]**、**[診断設定を追加する]** の順に選択します。
 
 1. 設定に `Logs and Metrics to storage` という名前を付けます。
 
 1. 次のログおよびメトリック カテゴリの横にチェックマークを付けます。
 
-    - **Azure Backup レポート データ**
-    - **アドオン Azure Backup ジョブ データ**
-    - **アドオン Azure Backup アラート データ**
-    - **Azure Site Recovery ジョブ**
-    - **Azure Site Recovery イベント**
-    - **正常性**
+    - **Azure Backup Reporting Data**
+    - **Addon Azure Backup Job Data**
+    - **Addon Azure Backup Alert Data**
+    - **Azure Site Recovery Jobs**
+    - **Azure Site Recovery Events**
+    - **Health**
 
 1. [宛先の詳細] で、**[ストレージ アカウントへのアーカイブ]** の横にチェックマークを付けます。
 
@@ -229,7 +229,7 @@ lab:
     | サブスクリプション | "Azure サブスクリプションの名前" |
     | リソース グループ | `az104-rg-region2` (必要に応じて、**[新規作成]** を選択します) |
     | コンテナー名 | `az104-rsv-region2` |
-    | リージョン | **米国西部** |
+    | リージョン | **West US** |
 
     >**注**:必ず、仮想マシンとは**異なる**リージョンを指定してください。
 
