@@ -26,7 +26,7 @@ lab:
 
 ## アーキテクチャの図
 
-![アーキテクチャのタスクの図](../media/az104-lab11-architecture.png)
+![アーキテクチャのタスクの図](./media/az104-lab11-architecture.png)
 
 ## 職務スキル
 
@@ -163,7 +163,7 @@ lab:
 
 1. 次のような通知メールを受け取る必要があります: "**重要な注意: Azure Monitor alert VM was deleted was activated...**" (VM が削除されたことを示す Azure Monitor アラートがアクティブになりました...)そうでない場合は、メール プログラムを開き、azure-noreply@microsoft.com からのメールを探します。
 
-    ![アラート メールのスクリーンショット。](../media/az104-lab11-alert-email.png)
+    ![アラート メールのスクリーンショット。](./media/az104-lab11-alert-email.png)
    
 1. Azure portal のリソース メニューで **[監視]** を選択してから、左側のメニューで **[アラート]** を選択します。
 
@@ -195,7 +195,7 @@ lab:
     | 末尾 | 明日の日付の午前 7 時を入力します。 |
     | タイム ゾーン | ローカル タイムゾーンを選択してください。 |
 
-    ![警告処理ルールのスケジュール設定セクションのスクリーンショット](../media/az104-lab11-alert-processing-rule-schedule.png)
+    ![警告処理ルールのスケジュール設定セクションのスクリーンショット](./media/az104-lab11-alert-processing-rule-schedule.png)
 
 1. **[次へ: 詳細]** を選択し、次の設定を入力します。
 
