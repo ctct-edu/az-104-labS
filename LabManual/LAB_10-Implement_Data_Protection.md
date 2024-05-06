@@ -36,7 +36,7 @@ lab:
 
 ## アーキテクチャの図
 
-![アーキテクチャのタスクの図。](../media/az104-lab10-architecture.png)
+![アーキテクチャのタスクの図。](./media/az104-lab10-architecture.png)
 
 ## タスク 1:テンプレートを使用してインフラストラクチャをプロビジョニングする
 
@@ -82,7 +82,7 @@ lab:
 
 このタスクでは、Recovery Services コンテナーを作成します。 Recovery Services コンテナーは、仮想マシン データのストレージを提供します。 
 
-1. Azure portal で、`Recovery Services vaults` を検索して選択し、**[Recovery Services コンテナー]** ブレードで **[+ 作成]** をクリックします。
+1. Azure portal で、`Recovery Services コンテナー` を検索して選択し、**[Recovery Services コンテナー]** ブレードで **[+ 作成]** をクリックします。
 
 1. **[Recovery Services コンテナーの作成]** ウィンドウで、次の設定を指定します。
 
@@ -95,7 +95,7 @@ lab:
 
     >**注**: 前のタスクで仮想マシンをデプロイしたリージョンを必ず指定してください。
 
-    ![Recovery Services コンテナーのスクリーンショット。](../media/az104-lab10-create-rsv.png)
+    ![Recovery Services コンテナーのスクリーンショット。](./media/az104-lab10-create-rsv.png)
 
 1. **[確認と作成]** をクリックし、検証が成功したことを確認してから **[作成]** をクリックします。
 
