@@ -192,7 +192,7 @@ lab:
 
 1. **[Bash]** セッションの **[Cloud Shell]** で作業を続けます。
 
-1. **[\Allfiles\Lab03\azuredeploydisk.bicep]** ファイルを見つけてダウンロードします。
+1. **[\Allfiles\Labs\03\azuredeploydisk.bicep]** ファイルを見つけてダウンロードします。
 
     ※ラボで使用するファイル群は[ここから](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/archive/master.zip)ダウンロード可能です。
 
