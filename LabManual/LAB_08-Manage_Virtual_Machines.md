@@ -309,7 +309,7 @@ lab:
 
 1. 次のコマンドを入力して、仮想ネットワークを作成してください。 ダイアログが表示されたら、VM のユーザー名とパスワードを入力してください。 待機中に、仮想マシンの作成に関連付けられているすべてのパラメーターについて、[New-AzVM](https://learn.microsoft.com/powershell/module/az.compute/new-azvm?view=azps-11.1.0) コマンド リファレンスをチェックアウトしてください。
 
-    > **注:**  "ResourceGroupName"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョンはリソースグループと同じリージョンを指定してください。下記は East US の場合です。
+    > **注:**  "ResourceGroupName"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(-location)はリソースグループと同じリージョンを指定してください。下記は East US の場合です。
 
     ```powershell
     New-AzVm -ResourceGroupName 'az104-rg8' -Name 'myPSVM' -Image 'Win2019Datacenter' -location 'eastus' -Zone '1' -Size 'Standard_D2s_v3' -Credential (Get-Credential) 
@@ -339,7 +339,7 @@ lab:
 
 1. 次のコマンドを入力して、仮想ネットワークを作成してください。 ダイアログが表示されたら、VM のユーザー名とパスワードを入力してください。 待機中に、仮想マシンの作成に関連付けられているすべてのパラメーターについて、[az vm create](https://learn.microsoft.com/cli/azure/vm?view=azure-cli-latest#az-vm-create) コマンド リファレンスをチェックアウトしてください。
 
-    > **注:**  "resource-group"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョンはリソースグループと同じリージョンを指定してください。下記は East US の場合です。
+    > **注:**  "resource-group"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(--location)はリソースグループと同じリージョンを指定してください。下記は East US の場合です。
 
     ```sh
     az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --size Standard_D2s_v3 --location eastus --admin-username localadmin --generate-ssh-keys
