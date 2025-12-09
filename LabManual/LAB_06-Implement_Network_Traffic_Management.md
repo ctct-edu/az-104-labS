@@ -36,6 +36,8 @@ lab:
 
 1. **\\Allfiles\\Lab\\06\\az104-06-vms-template.json** ファイルを見つけて選び、**[開く]** を選びます。
 
+    ※ラボで使用するファイル群は[ここから](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/archive/master.zip)ダウンロード可能です。
+
 1. **[保存]** を選択します。
 
 1. **[パラメーターの編集]** を選んで、**\\Allfiles\\Lab\\06\\az104-06-vms-parameters.json** ファイルを読み込みます。
