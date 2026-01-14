@@ -184,7 +184,7 @@ lab:
 1. ディスクが作成されたことを確認します。
 
      ```sh
-     az disk list --output table
+     az disk list --output table --resource-group az104-rg3
      ```
 
 ## タスク 5:Azure Bicep を使用してリソースをデプロイする
@@ -220,7 +220,7 @@ lab:
 1. ディスクが作成されたことを確認します。
 
     ```sh
-    az disk list --output table
+    az disk list --output table --resource-group az104-rg3
     ```
 
     >**注:**  5 つのマネージド ディスクが、それぞれ異なる方法で正常にデプロイされました。 お疲れさまでした。
