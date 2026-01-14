@@ -52,7 +52,7 @@ lab:
     | 可用性オプション | **可用性ゾーン** |
     | 可用性ゾーン | **ゾーン 1、2** |
     | セキュリティの種類 | **Standard** |
-    | イメージ | **Windows Server 2019 Datacenter - x64 Gen2** |
+    | イメージ | **Windows Server 2025 Datacenter: Azure Edition - x64 Gen2** |
     | Azure Spot 割引で実行する | 未選択 |
     | サイズ | **Standard D2s v3** |
     | ユーザー名 | `localadmin` |
@@ -161,7 +161,7 @@ lab:
     | 可用性ゾーン | **ゾーン 1、2、3** |
     | オーケストレーション モード | **均一** |
     | セキュリティの種類 | **Standard** |
-    | イメージ | **Windows Server 2019 Datacenter - x64 Gen2** |
+    | イメージ | **Windows Server 2025 Datacenter: Azure Edition - x64 Gen2** |
     | Azure Spot 割引で実行する | **未選択** |
     | サイズ | **Standard D2s_v3** |
     | ユーザー名 | `localadmin` |
