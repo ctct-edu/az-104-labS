@@ -41,9 +41,7 @@ lab:
 
 このタスクでは、監視シナリオのテストに使用する仮想マシンをデプロイします。
 
-1. **\\Allfiles\\Lab\\11\\az104-11-vm-template.json** ラボ ファイルをコンピューターにダウンロードします。
-
-1. **Azure portal** - `https://portal.azure.com` にサインインします。
+1. [**Azure portal**](https://portal.azure.com/) にサインインします。
 
 1. Azure portal から、`カスタム テンプレートのデプロイ` を検索して選択します。
 
@@ -52,6 +50,8 @@ lab:
 1. [テンプレートの編集] ページで、**[ファイルの読み込み]** を選択します。
 
 1. **\\Allfiles\\Labs\\11\\az104-11-vm-template.json** ファイルを見つけて選び、**[開く]** を選びます。
+
+    ※ラボで使用するファイル群は[ここから](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/archive/master.zip)ダウンロード可能です。
 
 1. **[保存]** を選択します。
 
@@ -64,7 +64,7 @@ lab:
     | リージョン        | **East US** |
     | Username (ユーザー名)      | `localadmin`   |
     | Password (パスワード)      | 複雑なパスワードを指定します |
-    
+
 1. **[確認および作成]** を選択し、次に **[作成]** を選択します。
 
 1. デプロイが完了するまで待ってから、**[リソース グループに移動]** をクリックします。
