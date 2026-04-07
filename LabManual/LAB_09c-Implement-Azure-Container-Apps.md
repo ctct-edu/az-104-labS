@@ -27,7 +27,7 @@ lab:
 
 ## タスク 1:Azure コンテナー アプリと環境を作成して構成する
 
-Azure Container Apps は、マネージド Kubernetes クラスターの概念をさらに一歩進め、クラスター環境を管理し、クラスター上で他のマネージド サービスを提供します。 自分でクラスターを管理する必要がある Azure Kubernetes クラスターとは異なり、Azure Container Apps インスタンスでは、複雑な Kubernetes クラスターの設定の一部を行わなくて済みます。
+Azure Container Apps は、マネージド Kubernetes クラスターの概念をさらに一歩進め、クラスター環境を管理し、クラスター上でマネージド サービスを提供します。 Azure Container Apps では、複雑な Kubernetes クラスターの設定の一部を行わなくて済みます。
 
 1. Azure portal から、**[コンテナーアプリ]** を検索して選択します。
 
