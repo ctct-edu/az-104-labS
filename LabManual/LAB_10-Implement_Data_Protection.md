@@ -200,7 +200,7 @@ az provider register --namespace Microsoft.insights
     | サブスクリプション          | 既定のサブスクリプション |
     | リソース グループ        | **az104-rg-region1**        |
     | ストレージ アカウント名  | グローバルに一意の名前を指定します   |
-    | リージョン                | **East US** |
+    | リージョン                | **West US 3** |
 
 1. [確認] タブで、**[作成]** を選択します。
 
