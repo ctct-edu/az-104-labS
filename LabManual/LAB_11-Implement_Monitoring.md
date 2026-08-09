@@ -61,7 +61,7 @@ lab:
     | ---           | ---           |
     | サブスクリプション  | お使いの Azure サブスクリプション |
     | Resource group| `az104-rg11` (必要に応じて、**[新規作成]** を選択します)|
-    | リージョン        | **East US** |
+    | リージョン        | **West Central US** |
     | Username (ユーザー名)      | `localadmin`   |
     | Password (パスワード)      | 複雑なパスワードを指定します |
 
