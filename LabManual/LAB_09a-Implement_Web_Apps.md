@@ -137,7 +137,7 @@ lab:
 
 1. **[最大バースト(Maximum burst)]** フィールドで、**[2]** を選びます。
 
-1. ステージング スロットがある場合は、**[Azure Cloud Shell]** を ([Bash] 、 [ストレージアカウントは不要です] と使用中のサブスクリプションを選択して「適用」をクリックして)開き、次のコマンドを実行して、ステージング スロットの最小エラスティック インスタンス数を 1 に設定してから **[保存]** を選択します。
+1. ステージング スロットがある場合は、Azure Portalの上のボタンから「Azure Cloud Shell」を起動します。 「Azure Cloud Shell へようこそ」画面で「Bash」を選択します。 「作業の開始」画面でサブスクリプションだけを選択して「適用」 以下のコマンドを実行し、エラーがないことを確認した後、「Azure Cloud Shell」を閉じます。
 
     ```
     az webapp update --resource-group (リソースグループ名) --name (Webアプリ名) --slot staging --minimum-elastic-instance-count 1
