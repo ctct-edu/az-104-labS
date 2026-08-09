@@ -169,11 +169,9 @@ lab:
 
 1. メニュー バーで **[削除]** を選択します。
 
-1. 
-
 1. タイトル バーで **[通知]** アイコンを選んで、**vm0** が正常に削除されるまで待ちます。
 
-1. 次のような通知メールを受け取ります: "**Important notice : Azure Monitor alert VM was deleted was activated...**" (VM が削除されたことを示す Azure Monitor アラートがアクティブになりました...)そうでない場合は、メール プログラムを開き、azure-noreply@microsoft.com からのメールを探します。
+1. メールが設定されている場合は、azure-noreply@microsoft.com から次のような通知メールを受け取ります: "**Important notice : Azure Monitor alert VM was deleted was activated...**" (VM が削除されたことを示す Azure Monitor アラートがアクティブになりました...)。
 
     ![アラート メールのスクリーンショット。](./media/az104-lab11-alert-email.png)
 
