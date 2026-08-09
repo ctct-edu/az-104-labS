@@ -40,7 +40,7 @@ Azure Container Apps は、マネージド Kubernetes クラスターの概念�
     | サブスクリプション | 既定のサブスクリプション |
     | リソース グループ | `az104-rg9` から始まるリソースグループ |
     | コンテナー アプリ名 | `my-app` |
-    | 地域  | East US |
+    | 地域  | Central US |
     | Container Apps 環境 | my-environment<br />（「新しい環境の作成」リンクをクリックして「Container Apps 環境の作成」ブレードに遷移した後、環境名に「my-environment」と入力して「作成」をクリックすると、基本情報タブに戻ります。） |
 
 1. **[コンテナー]** タブで、**[クイックスタート イメージを使用する]** のチェックボックスをオンにします。クイックスタート イメージが **[Simple hello world container]** に設定されていることを確認します。
