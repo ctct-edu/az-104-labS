@@ -183,9 +183,9 @@ Azure Portalの上のボタンから「Azure Cloud Shell」を起動します。
 「作業の開始」画面でサブスクリプションだけを選択して「適用」
 以下のコマンドを実行し、エラーがないことを確認した後、「Azure Cloud Shell」を閉じます。
 
+```
 az provider register --namespace Microsoft.insights
-
-
+```
 
 上記事前準備の後、以下の手順を進めてください。
 
