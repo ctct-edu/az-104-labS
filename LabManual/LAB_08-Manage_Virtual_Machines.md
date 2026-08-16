@@ -53,7 +53,7 @@ lab:
 | セキュリティの種類 | Standard |
 | イメージ | Windows Server 2025 Datacenter - x64 Gen2 |
 | Azure Spot 割引で実行する | 未選択 |
-| サイズ | 	Standard D2s v3 |
+| サイズ | 	Standard_D2s_v3 |
 | ユーザー名 | `localadmin` |
 | パスワード | 任意のパスワード |
 | パブリック受信ポート | なし |
@@ -306,13 +306,13 @@ lab:
     > **注:**  "ResourceGroupName"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(-location)はリソースグループと同じリージョンを指定してください。下記は East US の場合です。
 
     ```powershell
-    New-AzVm -ResourceGroupName 'az104-rg8' -Name 'myPSVM' -Image 'Win2019Datacenter' -location 'westus2' -Zone '1' -Size 'Standard_D2s_v3' -Credential (Get-Credential) 
+    New-AzVm -ResourceGroupName '<リソースグループ名>' -Name 'myPSVM' -Image 'MicrosoftWindowsServer:WindowsServer:2025-datacenter-g2:latest' -Location 'westus2' -Zone '1' -Size 'Standard_D2ds_v4' -Credential (Get-Credential)
     ```
     
 1. コマンドが完了したら、**Get-AzVM** を使用してリソース グループ内の仮想マシンを一覧表示してください。
 
     ```powershell
-    Get-AzVM -ResourceGroupName 'az104-rg8' -Status
+    Get-AzVM -ResourceGroupName '<リソースグループ名>' -Status
     ```
     
 1. 新しい仮想マシンが一覧表示され、**[状態]** が **[実行中]** になっていることを確認してください。
@@ -320,7 +320,7 @@ lab:
 1. **Stop-AzVM** を使用して仮想マシンの割り当てを解除してください。 確認するには、「**Yes**」と入力してください。
 
     ```powershell
-    Stop-AzVM -ResourceGroupName 'az104-rg8' -Name 'myPSVM' 
+    Stop-AzVM -ResourceGroupName '<リソースグループ名>' -Name 'myPSVM' 
     ```
     
 1. **Get-AzVM** を **-Status** パラメーターとともに使用して、マシンの**割り当てが解除されている**ことを確認してください。
@@ -336,13 +336,13 @@ lab:
     > **注:**  "resource-group"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(--location)はリソースグループと同じリージョンを指定してください。下記は East US の場合です。
 
     ```sh
-    az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --size Standard_D2s_v3 --location westus2 --admin-username localadmin --generate-ssh-keys
+    az vm create --name myCLIVM --resource-group <リソースグループ名> --image Ubuntu2204 --size Standard_D2s_v3 --location westus2 --admin-username localadmin --generate-ssh-keys
     ```
 
 1. コマンドが完了したら、**az vm show** を使用してマシンが作成されたことを確認してください。
 
     ```sh
-    az vm show --name  myCLIVM --resource-group az104-rg8 --show-details
+    az vm show --name  myCLIVM --resource-group '<リソースグループ名>' --show-details
     ```
 
 1. **powerState** が **VM Running** であることを確認してください。
@@ -350,7 +350,7 @@ lab:
 1. **az vm deallocate** を使用して仮想マシンの割り当てを解除してください。 確認するには、「**Yes**」と入力してください。
 
     ```sh
-    az vm deallocate --resource-group az104-rg8 --name myCLIVM
+    az vm deallocate --resource-group '<リソースグループ名>' --name myCLIVM
     ```
 
 1. **az vm show** を使用して、**powerState** が **VM deallocated** であることを確認してください。
