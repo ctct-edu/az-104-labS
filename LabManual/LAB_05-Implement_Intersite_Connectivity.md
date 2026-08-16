@@ -49,8 +49,8 @@ lab:
     | 地域 | **(US) East US** |
     | 可用性オプション | インフラストラクチャ冗長は必要ありません |
     | セキュリティの種類 | **Standard** |
-    | イメージ | **Windows Server 2019 Datacenter - x64 Gen2**（すべてのイメージを表示して選択） |
-    | サイズ | **Standard_D2s_v3** |
+    | イメージ | **Windows Server 2025 Datacenter - x64 Gen2**（すべてのイメージを表示して選択） |
+    | サイズ | **Standard_D2s_v7** |
     | ユーザー名 | `localadmin` |
     | パスワード | **任意のパスワードを指定** |
     | パブリック受信ポート | **なし** |
@@ -93,8 +93,8 @@ lab:
     | 地域 | **(US) East US** |
     | セキュリティの種類 | **Standard** |
     | 可用性オプション | インフラストラクチャ冗長は必要ありません |
-    | イメージ | **Windows Server 2019 Datacenter - x64 Gen2** |
-    | サイズ | **Standard_D2s_v3** |
+    | イメージ | **Windows Server 2025 Datacenter - x64 Gen2** |
+    | サイズ | **Standard_D2s_v7** |
     | ユーザー名 | `localadmin` |
     | パスワード | **任意のパスワードを指定** |
     | パブリック受信ポート | **なし** |
