@@ -328,13 +328,22 @@ lab:
 
 ## タスク 5: Azure PowerShell (Option 1) を使用して仮想マシンを作成する
 
-1. アイコン (右上) を使用して **Cloud Shell** セッションを起動してください。 または、`https://shell.azure.com` に直接移動してください。
+1. Azure Portal 右上のツールバーにある、「`>_`」のようなターミナル形の **[Cloud Shell]** アイコンを選択して、Cloud Shell を起動します。  
+   または、`https://shell.azure.com` に直接アクセスします。
 
-1. 必ず **PowerShell** を選択してください。 必要に応じて、**[詳細設定の表示]** を使用し、シェル ストレージを構成してください。
+1. Cloud Shell の種類を選択する画面が表示された場合は、**[PowerShell]** を選択します。
+
+1. **[作業の開始]** 画面が表示されたら、**[ストレージ アカウントは不要です]** を選択します。
+
+1. **[サブスクリプション]** で、ラボで使用しているサブスクリプションを選択します。
+
+1. **[適用]** を選択します。
+
+1. Cloud Shell の起動が完了し、PowerShell のプロンプトが表示されることを確認します。
 
 1. 次のコマンドを入力して、仮想ネットワークを作成してください。 ダイアログが表示されたら、VM のユーザー名とパスワードを入力してください。 待機中に、仮想マシンの作成に関連付けられているすべてのパラメーターについて、[New-AzVM](https://learn.microsoft.com/powershell/module/az.compute/new-azvm?view=azps-11.1.0) コマンド リファレンスをチェックアウトしてください。
 
-    > **注:**  "ResourceGroupName"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(-location)はリソースグループと同じリージョンを指定してください。下記は East US の場合です。
+    > **注:**  "ResourceGroupName"に指定するリソースグループ名が異なる場合があります。Azure Portalで[リソースグループ]を検索して、使用可能なリソースグループ名を特定してください。またリージョン(-location)はリソースグループと同じリージョンを指定してください。下記は westus2 の場合です。
 
     ```powershell
     New-AzVm -ResourceGroupName '<リソースグループ名>' -Name 'myPSVM' -Image 'MicrosoftWindowsServer:WindowsServer:2025-datacenter-g2:latest' -Location 'westus2' -Zone '1' -Size 'Standard_D2ds_v4' -Credential (Get-Credential)
