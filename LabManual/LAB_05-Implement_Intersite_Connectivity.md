@@ -168,18 +168,16 @@ lab:
 | リソース ID を知っている | 未選択 |
 | サブスクリプション | **MOC Subscription** |
 | 仮想ネットワーク | **ManufacturingVnet** |
-| ピアリングされた仮想ネットワーク に 'CoreServicesvnet' へのアクセスを許可する | 選択 (既定値) |
-| 'CoreServicesvnet' からのトラフィック転送の受信を ピアリングされた仮想ネットワーク に許可する | 選択 |
-| ピアリングされた仮想ネットワーク 内のゲートウェイまたはルート サーバーに 'CoreServicesvnet' へのトラフィックの転送を許可する | 未選択 (既定値) |
-| 'CoreServicesvnet' のリモート ゲートウェイまたはルート サーバーを使用するために ピアリングされた仮想ネットワーク を有効にする | 未選択 (既定値)                        |
+| `'ManufacturingVNet' に 'CoreServicesVNet' へのアクセスを許可する` | 選択 (既定値) |
+| `'CoreServicesVNet' からのトラフィック転送の受信を 'ManufacturingVNet' に許可する` | 選択 |
+| `'ManufacturingVNet' 内のゲートウェイまたはルート サーバーに 'CoreServicesVNet' へのトラフィックの転送を許可する` | 未選択 (既定値) |
+| `'CoreServicesVNet' のリモート ゲートウェイまたはルート サーバーを使用するために 'ManufacturingVNet' を有効にする` | 未選択 (既定値) |
 | **ローカル仮想ネットワークの概要**                            |                                       |
 | ピアリング リンクの名前              | `CoreServicesVnet-to-ManufacturingVnet` |
-| 仮想ネットワークのデプロイ モデル              | **Resource Manager**                 |
-| 'CoreServicesvnet' に ピアリングされた仮想ネットワーク へのアクセスを許可する | 選択 (既定値)                           |
-| ピアリングされた仮想ネットワーク からのトラフィック転送の受信を 'CoreServicesvnet' に許可する | 選択                                    |
-| 'CoreServicesvnet' 内のゲートウェイまたはルート サーバーに ピアリングされた仮想ネットワーク へのトラフィックの転送を許可す | 未選択 (既定値) |
-| ピアリングされた仮想ネットワーク のリモート ゲートウェイまたはルート サーバーを使用するために 'CoreServicesvnet' を有効にする | 未選択 (既定値)                        |
-
+| `'CoreServicesVNet' に 'ManufacturingVNet' へのアクセスを許可する` | 選択 (既定値) |
+| `'ManufacturingVNet' からのトラフィック転送の受信を 'CoreServicesVNet' に許可する` | 選択 (既定値) |
+| `'CoreServicesVNet' 内のゲートウェイまたはルート サーバーに 'ManufacturingVNet' へのトラフィックの転送を許可する` | 未選択 (既定値) |
+| `'ManufacturingVNet' のリモート ゲートウェイまたはルート サーバーを使用するために 'CoreServicesVNet' を有効にする` | 未選択 (既定値) |
 1. 設定を確認し、**[追加]** を選択します。
 
 1. [CoreServicesVnet | ピアリング] で、**CoreServicesVnet-to-ManufacturingVnet** ピアリングが一覧に表示されることを確認します。 ページを更新して、**[ピアリング状態]** が **[接続済み]** であることを確認します。
