@@ -241,9 +241,9 @@
 
 6. 次の変更を行います。
 
-   - `managedDiskName` の値を `Disk4` に変更します。
-   - SKU 名の値を `StandardSSD_LRS` に変更します。
-   - `diskSizeinGiB` の値を `32` に変更します。
+   - `managedDiskName`の値を`diskname`から`Disk4` に変更します。
+   - SKU 名の値を `UltraSSD_LRS`から`StandardSSD_LRS` に変更します。
+   - `diskSizeinGiB` の値を`8`から`32` に変更します。
 
 7. **Ctrl + S** キーを押して変更内容を保存します。
 
