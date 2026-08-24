@@ -175,7 +175,7 @@ lab:
 | **ローカル仮想ネットワークの概要**                            |                                       |
 | ピアリング リンクの名前              | `CoreServicesVnet-to-ManufacturingVnet` |
 | `'CoreServicesVNet' に 'ManufacturingVNet' へのアクセスを許可する` | 選択 (既定値) |
-| `'ManufacturingVNet' からのトラフィック転送の受信を 'CoreServicesVNet' に許可する` | 選択 (既定値) |
+| `'ManufacturingVNet' からのトラフィック転送の受信を 'CoreServicesVNet' に許可する` | 選択 |
 | `'CoreServicesVNet' 内のゲートウェイまたはルート サーバーに 'ManufacturingVNet' へのトラフィックの転送を許可する` | 未選択 (既定値) |
 | `'ManufacturingVNet' のリモート ゲートウェイまたはルート サーバーを使用するために 'CoreServicesVNet' を有効にする` | 未選択 (既定値) |
 1. 設定を確認し、**[追加]** を選択します。
