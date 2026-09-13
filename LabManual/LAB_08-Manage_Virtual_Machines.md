@@ -188,7 +188,7 @@ lab:
     | セキュリティの種類 | **Standard** |
     | イメージ | **Windows Server 2025 Datacenter - x64 Gen2** |
     | Azure Spot 割引で実行する | **未選択** |
-    | サイズ | **Standard D2ds_v3** |
+    | サイズ | **Standard D2s_v3** |
     | ユーザー名 | `localadmin` |
     | パスワード | **任意のパスワードを指定する**  |
 
